@@ -1,0 +1,25 @@
+.folder_name:hover{
+background-color:#e6e6e6;
+}
+
+div > div{
+    margin-left: 15px;
+}
+i{
+    color: #ff9900;
+   
+}
+.hide{
+    display: none;
+}
+.visible{
+    display: block;
+}
+.folder_name{
+    display: flex;
+   align-items: center;
+
+}
+.file_name{
+    margin-left: 5px;
+}

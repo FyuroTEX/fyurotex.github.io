@@ -1,0 +1,226 @@
+body,
+*,
+::after,
+::before,
+:hover {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+body {
+  background-color: $bgColor;
+}
+$size: (
+  sectionSize: 2*600px,
+  cardSize: 1120px,
+);
+@mixin logo {
+  display: flex;
+  width: 130px;
+  color: $textColor;
+  justify-content: space-around;
+  align-items: center;
+  p {
+    font-size: 24px;
+    font-family: $text;
+    line-height: 20px;
+    span {
+      font-size: 11px;
+      display: block;
+      font-family: $text;
+      text-align: center;
+    }
+  }
+}
+@mixin btn {
+  background-color: $btnColor;
+  padding: 13px 40px;
+  font-family: $title;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: $textText;
+  &:hover {
+    background-color: darken($btnColor, 10%);
+  }
+}
+@mixin link {
+  color: $textText;
+  font-size: 20px;
+  font-family: $title;
+}
+@mixin subLine($width, $height) {
+  width: $width;
+  height: $height;
+  position: absolute;
+  background-color: $lineColor;
+  z-index: -1;
+}
+.header {
+  background-image: $headerBgImage;
+  min-height: 720px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0% 0% 40% 0%;
+  &-wrap {
+    padding-top: 20px;
+    margin: 0px 193px;
+    width: 660px;
+    .landing-logo {
+      @include logo;
+    }
+  }
+  &_heading {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 75px;
+    font-family: $title;
+    position: relative;
+    color: $textColor;
+    z-index: 1;
+    &::after {
+      content: '';
+      @include subLine($width: 310px, $height: 50px);
+      left: 0;
+      bottom: 10px;
+    }
+  }
+  &_text {
+    font-family: $text;
+    margin: 65px 0px;
+    color: $textColor;
+    max-width: 538px;
+  }
+  button {
+    @include btn;
+  }
+  a {
+    @include link;
+    margin-left: 155px;
+  }
+}
+.section {
+  width: map-get($size, sectionSize);
+  margin: 50px auto 0px;
+  &_text {
+    @extend .section_banner_heading;
+    text-align: center;
+    font-family: $title;
+    color: $textColor;
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    display: block;
+    &::after {
+      content: '';
+      @include subLine($width: 180px, $height: 50px);
+      right: 410px;
+      bottom: 10px;
+    }
+  }
+  &_card {
+    &_wrap {
+      max-width: map-get($size, cardSize);
+      margin: 0 auto;
+    }
+    display: flex;
+    background-color: $cardColor;
+    color: $textText;
+    padding: 20px;
+    max-height: 330px;
+    border-radius: 5px;
+    margin-top: 25px;
+    &_img {
+      max-width: 460px;
+      width: 100%;
+      border-radius: 5px;
+    }
+    &_right_container {
+      width: 455px;
+      margin: auto;
+      line-height: 20px;
+      font-family: $text;
+      a {
+        @include link;
+        display: block;
+        margin: 30px 0;
+        text-align: center;
+      }
+    }
+    &_heading {
+      text-align: center;
+      margin: 20px 0px 40px;
+      font-size: 22px;
+      font-family: $title;
+      font-weight: bold;
+    }
+  }
+  &_banner {
+    display: flex;
+    margin-top: 140px;
+    height: 145px;
+    width: 100%;
+    background: linear-gradient(90deg, $gradientLeft, $gradientRight);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 160px;
+    border-radius: 5px;
+    font-family: $text;
+    position: relative;
+    z-index: 2;
+    &_text_wrap {
+      .section_banner_heading {
+        font-size: 30px;
+        font-weight: bold;
+        display: inline-block;
+        position: relative;
+        color: $textColor;
+        font-family: $title;
+        line-height: 65px;
+        &::after {
+          content: '';
+          @include subLine($width: 65px, $height: 50px);
+          left: 120px;
+          bottom: 15px;
+        }
+      }
+      .section_banner_text {
+        color: $textText;
+      }
+    }
+    button {
+      @include btn;
+    }
+  }
+}
+.footer {
+  display: flex;
+  align-items: flex-end;
+  height: 245px;
+  background-color: $cardColor;
+  color: $textText;
+  font-family: $ff;
+  margin-top: -70px;
+  &-wrap {
+    display: flex;
+    margin: 0px auto 0px;
+    width: 1540px;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+    font-family: $text;
+  }
+  &_logo {
+    @include logo;
+    color: $textText;
+  }
+  &_text {
+    width: 300px;
+  }
+}

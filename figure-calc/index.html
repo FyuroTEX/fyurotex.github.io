@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>FL-11 Group 3 Group Work 2</title>
+  <link rel="stylesheet" href="./css.css">
+</head>
+
+<body>
+  <div class="paralelogram figure">
+    <svg width="300" height="200">
+      <path id="paralelogram" d="M10 140 H 190 L 220 70 H 50 Z" stroke="black" fill="transparent" stroke-width="5" />
+    </svg>
+    <div class="value">
+      <div class="blockArguments">
+        <div class="prg">
+
+          <label for="prgAside">A: </label>
+          <input type="number" name="aside" id="prgAside" value="80">
+
+        </div>
+        <div class="prg">
+          <label for="prgBside">B: </label>
+          <input type="number" name="bside" id="prgBside" value="180">
+        </div>
+        <div class="prg">
+          <label for="prgAngle">Angle: </label>
+          <input type="number" name="angle" id="prgAngle" value="65">
+        </div>
+      </div>
+      <div class="paralelogramResult rezult">
+        <p class="prgArea">Area: <span id='prgArea'>-</span></p>
+        <p class="prgHight">h: <span id='prgH'>-</span></p>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="circleCalculate figure">
+    <svg width="300" height="200">
+      <circle id='circle' cx="100" cy="100" r="50" stroke="black" fill="transparent" stroke-width="5" />
+    </svg>
+    <div class="value">
+      <div class="blockArguments">
+        <div class="circle">
+          <label for="circleRadius">R: </label>
+          <input type="number" name="circleRadius" id="circleRadius" value="50">
+        </div>
+      </div>
+      <div class="circleResult rezult">
+        <p class="circleArea">Area: <span id='circleArea'>-</span></p>
+        <p class="circleL">L: <span id='circleL'>-</span></p>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="elipseCalculate figure">
+    <svg width="300" height="200">
+      <ellipse id='elipse' cx="100" cy="100" rx="75" ry="45" stroke="black" fill="transparent" stroke-width="5" />
+    </svg>
+    <div class="value">
+      <div class="blockArguments">
+        <div class="elips">
+          <label for="horisontalRadius">Horisontal R: </label>
+          <input type="number" name="horisontalRadius" id="horisontalRadius" value="75">
+        </div>
+        <div class="elips">
+          <label for="verticalRadius">Vertical R: </label>
+          <input type="number" name="verticalRadius" id="verticalRadius" value="45">
+        </div>
+      </div>
+      <div class="elipsResult rezult">
+        <p class="elipsArea">Area: <span id='elipsArea'>-</span></p>
+        <p class="elipsLength">L: <span id='elipsL'>-</span></p>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="squareCalculate figure">
+    <svg width="300" height="200">
+      <rect id="square" x="50" y="50" width="110" height="110" stroke="black" fill="transparent" stroke-width="5" />
+    </svg>
+    <div class="value">
+      <div class="blockArguments">
+        <div class="square">
+          <label for="squareValue">A: </label>
+          <input type="number" name="squareValue" id="squareValue" value="110">
+        </div>
+      </div>
+      <div class="squareResult rezult">
+        <p class="squareDiagonal">Diagonal: <span id='squareDiagonal'>-</span></p>
+        <p class="squareArea">Area: <span id='squareArea'>-</span></p>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="rectangleCalculate figure">
+    <svg width="300" height="200">
+      <rect id="rectangle" x="30" y="50" width="160" height="60" stroke="black" fill="transparent" stroke-width="5" />
+    </svg>
+    <div class="value">
+      <div class="blockArguments">
+        <div class="rectangle">
+          <label for="rectangleA">A: </label>
+          <input type="number" name="rectangleValue" id="rectangleA" value="160">
+        </div>
+        <div class="rectangle">
+          <label for="rectangleB">B: </label>
+          <input type="number" name="rectangleValue" id="rectangleB" value="60">
+        </div>
+      </div>
+      <div class="rectangleResult rezult">
+        <p class="rectangleDiagonal">Diagonal: <span id='rectangleDiagonal'>-</span></p>
+        <p class="rectangleArea">Area: <span id='rectangleArea'>-</span></p>
+      </div>
+    </div>
+  </div>
+  <hr />
+  <div class="triangleCalculate figure">
+    <svg width="300" height="200">
+      <path id="triangle" d="M10 10 V 140 H 120 Z" stroke="black" fill="transparent" stroke-width="5" />
+    </svg>
+    <div class="value">
+      <div class="blockArguments">
+        <div class="triangle">
+          <label for="valueTriangleA">A: </label>
+          <input type="number" name="triangleValue" id="valueTriangleA" value="130">
+        </div>
+        <div class="triangle">
+          <label for="valueTriangleB">B: </label>
+          <input type="number" name="triangleValue" id="valueTriangleB" value="110">
+        </div>
+      </div>
+      <div class="triangleResult rezult">
+        <p class="sideB">C: <span id='sideC'>-</span></p>
+        <p class="triangleA">a: <span id='triangleA'>-</span>&#176;</p>
+        <p class="triangleB">b: <span id='triangleB'>-</span>&#176;</p>
+        <p class="triangleArea">Area: <span id='triangleArea'>-</span></p>
+        <p class="triangleH">H: <span id='triangleH'>-</span></p>
+      </div>
+    </div>
+  </div>
+  <div class="calcGroup">
+    <div id="controlPanel">
+      <input type="checkbox" id="instant">
+      <label for="instant" class="instantCalculation">Instant calculation</label>
+    </div>
+    <button id="btnCalculate">Calculate</button>
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
