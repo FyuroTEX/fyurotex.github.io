@@ -10,7 +10,7 @@
 
     <!-- Styles should be switched here: -->
 
-    <link rel="stylesheet" id="style" type="text/css" href="css/style1.css">
+    <link rel="stylesheet" id='style' type="text/css" href="css/style1.css">
     <!-- <link id="style" rel="stylesheet" type="text/css" href="scss/style2.css"> -->
 
     <title>PEAKS hiking club</title>
@@ -139,13 +139,17 @@
 
 <script>
     const btn = document.getElementById('btn');
-    const stle = document.getElementById("style");
+    const stle = document.getElementById('style');
     btn.onclick = () => {
-        if (btn.checked != true) {
-            stle.href = "css/style1.css";
-        } else {
-            stle.href = "css/style2.css";
-        }
+        // if (btn.checked != true) {
+        //     stle.href = "css/style1.css";
+        // } else {
+        //     stle.href = "css/style2.css";
+        // }
+
+        // btn.checked ? stle.href = "css/style2.css" : stle.href = "css/style1.css";
+
+         stle.href = !btn.checked ? "css/style1.css" :  "css/style2.css";
     };
 </script>
 
