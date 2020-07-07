@@ -6,119 +6,149 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Hind:400,600%7CSource+Sans+Pro:400,600,700%7CFresca"
-          rel="stylesheet"/>
+        rel="stylesheet" />
 
     <!-- Styles should be switched here: -->
 
-    <link rel="stylesheet" type="text/css" href="css/style1.css">
-        <!-- <link rel="stylesheet" type="text/css" href="css/style2.css"> -->
+    <link rel="stylesheet" id="style" type="text/css" href="scss/style1.css">
+    <!-- <link id="style" rel="stylesheet" type="text/css" href="scss/style2.css"> -->
 
     <title>PEAKS hiking club</title>
 </head>
 
 <body>
-<header class="header">
-    <div class="header-wrap">
-        <div class="landing-logo">
-            <img src="img/m-logo.png" alt="logo"/>
-            <p>PEAKS<span>hiking club</span></p>
-        </div>
-        <p class="header_heading">
-            Join one of our awesome hikes
-        </p>
-        <p class="header_text">
-            Let us show you the hidden gems and adventurous trails our place has to offer.
-            Our mountains are much less explored than their Slovakian,
-            Polish or even Romanian counterparts. Add to that maps in Cyrillic and barely marked routes,
-            and you are up for a true adventure!
-        </p>
-        <div>
-            <button class="header_button">Join us</button>
-            <a href="#" class="login">Already has an account</a>
-        </div>
-    </div>
-</header>
-<main class="section">
-    <p class="section_text">
-        Welcome to adventure!
-    </p>
-    <div class="section_card_wrap">
-        <div class="section_card">
-            <img class="section_card_img"
-                 src="img/m-1.jpg"
-                 alt="experts"/>
-            <div class="section_card_right_container">
-                <p class="section_card_heading">
-                    Tranquility cracks
-                </p>
-                <p class="section_card_text">
-                    We go on a visually stimulating adventure through some of most scenic and popular ravines.
-                    The incredibly impressive Tranquility Cracks shows off a complex series of paths, tunnel ways and
-                    awe-inspiring views.
-                </p>
-                <a href="#" class="section_link">Learn more...</a>
+    <header class="header">
+        <div class="header-wrap">
+            <div class="header-bar">
+               <div class="landing-logo">
+                <img src="img/m-logo.png" alt="logo" />
+                <p>PEAKS<span>hiking club</span></p>
             </div>
-        </div>
-        <div class="section_card">
-            <img class="section_card_img"
-                 src="img/m-2.jpg"
-                 alt="content formats"/>
-            <div class="section_card_right_container">
-                <p class="section_card_heading">
-                    Skeleton gorge
-                </p>
-                <p class="section_card_text">
-                    Making our way through Skeleton Gorge's ravine, along the Smuts Track.
-                    Navigating through a series of ladders and mossy river boulders, we arrive at one of the famous and
-                    historical white beach sand dams atop the summit.
-                </p>
-                <a href="#" class="section_link">Learn more...</a>
+            <div class="switch_box box_3">
+                <div class="toggle_switch">
+                    <input type="checkbox" id="btn" class="switch_3">
+                    <svg class="checkbox" xmlns="http://www.w3.org/2000/svg" style="isolation:isolate"
+                        viewBox="0 0 168 80">
+                        <path class="outer-ring"
+                            d="M41.534 9h88.932c17.51 0 31.724 13.658 31.724 30.482 0 16.823-14.215 30.48-31.724 30.48H41.534c-17.51 0-31.724-13.657-31.724-30.48C9.81 22.658 24.025 9 41.534 9z"
+                            fill="none" stroke="#233043" stroke-width="3" stroke-linecap="square"
+                            stroke-miterlimit="3" />
+                        <path class="is_checked"
+                            d="M17 39.482c0-12.694 10.306-23 23-23s23 10.306 23 23-10.306 23-23 23-23-10.306-23-23z" />
+                        <path class="is_unchecked"
+                            d="M132.77 22.348c7.705 10.695 5.286 25.617-5.417 33.327-2.567 1.85-5.38 3.116-8.288 3.812 7.977 5.03 18.54 5.024 26.668-.83 10.695-7.706 13.122-22.634 5.418-33.33-5.855-8.127-15.88-11.474-25.04-9.23 2.538 1.582 4.806 3.676 6.66 6.25z" />
+                    </svg>
+                </div>
+            </div> 
             </div>
-        </div>
-        <div class="section_card">
-            <img class="section_card_img"
-                 src="img/m-3.jpg"
-                 alt="certificate"/>
-            <div class="section_card_right_container">
-                <p class="section_card_heading">
-                    Devils peak
-                </p>
-                <p class="section_card_text">
-                    We commence at the base of the Tafelberg start point walking the contour.
-                    With unique views and possibly the best vantage point to make out the entire Lion, lying below Table
-                    Mountain.
-                </p>
-                <a href="#" class="section_link">Learn more...</a>
-            </div>
-        </div>
-    </div>
-    <div class="section_banner">
-        <div class="section_banner_text_wrap">
-            <p class="section_banner_heading">
-                Ready to start your adventure?
+            
+            <p class="header_heading">
+                Join one of our awesome hikes
             </p>
-            <p class="section_banner_text">
-                Start your journey for a new impressions
+            <p class="header_text">
+                Let us show you the hidden gems and adventurous trails our place has to offer.
+                Our mountains are much less explored than their Slovakian,
+                Polish or even Romanian counterparts. Add to that maps in Cyrillic and barely marked routes,
+                and you are up for a true adventure!
             </p>
+            <div>
+                <button class="header_button">Join us</button>
+                <a href="#" class="login">Already has an account</a>
+            </div>
         </div>
-        <button class="section_banner_button">Join us</button>
-    </div>
-</main>
-<footer class="footer">
-    <div class="footer-wrap">
-        <div class="footer_logo landing-logo">
-            <img src="img/m-logo.png" alt="logo"/>
-            <p>PEAKS<span>hiking club</span></p>
-        </div>
-        <p class="footer_text">
-            We create content and curate adventures for people looking for a truly authentic encounter in the great
-            outdoors.
+    </header>
+    <main class="section">
+        <p class="section_text">
+            Welcome to adventure!
         </p>
-        <span class="footer-cr">
-          &copy; 2019 by PEAKS hiking club
-        </span>
-    </div>
-</footer>
+        <div class="section_card_wrap">
+            <div class="section_card">
+                <img class="section_card_img" src="img/m-1.jpg" alt="experts" />
+                <div class="section_card_right_container">
+                    <p class="section_card_heading">
+                        Tranquility cracks
+                    </p>
+                    <p class="section_card_text">
+                        We go on a visually stimulating adventure through some of most scenic and popular ravines.
+                        The incredibly impressive Tranquility Cracks shows off a complex series of paths, tunnel ways
+                        and
+                        awe-inspiring views.
+                    </p>
+                    <a href="#" class="section_link">Learn more...</a>
+                </div>
+            </div>
+            <div class="section_card">
+                <img class="section_card_img" src="img/m-2.jpg" alt="content formats" />
+                <div class="section_card_right_container">
+                    <p class="section_card_heading">
+                        Skeleton gorge
+                    </p>
+                    <p class="section_card_text">
+                        Making our way through Skeleton Gorge's ravine, along the Smuts Track.
+                        Navigating through a series of ladders and mossy river boulders, we arrive at one of the famous
+                        and
+                        historical white beach sand dams atop the summit.
+                    </p>
+                    <a href="#" class="section_link">Learn more...</a>
+                </div>
+            </div>
+            <div class="section_card">
+                <img class="section_card_img" src="img/m-3.jpg" alt="certificate" />
+                <div class="section_card_right_container">
+                    <p class="section_card_heading">
+                        Devils peak
+                    </p>
+                    <p class="section_card_text">
+                        We commence at the base of the Tafelberg start point walking the contour.
+                        With unique views and possibly the best vantage point to make out the entire Lion, lying below
+                        Table
+                        Mountain.
+                    </p>
+                    <a href="#" class="section_link">Learn more...</a>
+                </div>
+            </div>
+        </div>
+        <div class="section_banner">
+            <div class="section_banner_text_wrap">
+                <p class="section_banner_heading">
+                    Ready to start your adventure?
+                </p>
+                <p class="section_banner_text">
+                    Start your journey for a new impressions
+                </p>
+            </div>
+            <button class="section_banner_button">Join us</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="footer_logo landing-logo">
+                <img src="img/m-logo.png" alt="logo" />
+                <p>PEAKS<span>hiking club</span></p>
+            </div>
+            <p class="footer_text">
+                We create content and curate adventures for people looking for a truly authentic encounter in the great
+                outdoors.
+            </p>
+            <span class="footer-cr">
+                &copy; 2019 by PEAKS hiking club
+            </span>
+        </div>
+    </footer>
 </body>
+<style>
+ 
+</style>
+<script>
+    const btn = document.getElementById('btn');
+    const stle = document.getElementById("style");
+    btn.onclick = () => {
+        if (btn.checked != true) {
+            document.getElementById("style").href = "scss/style1.css";
+        } else {
+            document.getElementById("style").href = "scss/style2.css";
+        }
+    };
+</script>
 
 </html>
