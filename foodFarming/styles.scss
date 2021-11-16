@@ -1,0 +1,136 @@
+$text-color: #3f4042;
+*,
+::after,
+::before,
+:hover {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1320px;
+  padding-bottom: 90px;
+  margin: auto;
+  overflow: hidden;
+}
+header {
+  height: 146px;
+  display: flex;
+  align-items: center;
+  .nav_btn {
+    background-color: #fff;
+    width: 26px;
+    height: 26px;
+  }
+  .nav_links {
+    flex-shrink: 0;
+    flex-grow: 1;
+    .nav_links-block {
+      margin: auto;
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 808px;
+
+      align-items: center;
+
+      li {
+        font-family: 'Lato', sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0 auto;
+        a {
+          text-decoration: none;
+          color: #000;
+          &:active,
+          &.active {
+            color: #c08d5d;
+          }
+        }
+      }
+    }
+  }
+}
+.main {
+  background-color: #fffaf3;
+  margin-top: 40px;
+  padding: 81px 0px 30px 120px;
+  position: relative;
+  //   filter: drop-shadow(0px 15px 10px #C08D5D);
+  box-shadow: 0 80px 40px -40px #c08d5d7a;
+  .banner {
+    color: $text-color;
+    font-family: 'Playfair Display', serif;
+    max-width: 536px;
+    .banner_title-sup {
+      font-size: 50px;
+      font-weight: 700;
+    }
+    .banner_title {
+      font-weight: 700;
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
+    .banner_text {
+      margin-top: 26px;
+    }
+    .banner_btn {
+      display: flex;
+      align-items: center;
+      height: 64px;
+      border: 2px solid #c08d5d;
+      background: none;
+      margin-top: 72px;
+      padding-left: 15px;
+      font-size: 20px;
+      font-weight: 400;
+      font-family: 'Lato', sans-serif;
+      .banner_btn-arrow {
+        margin-left: 20px;
+        background: #c08d5d;
+        width: 64px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      img {
+        width: 17px;
+      }
+    }
+  }
+  .main_scroll {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  }
+  .grape {
+    position: absolute;
+    width: 100%;
+    max-width: 660px;
+    left: 50%;
+    top: -186px;
+    animation: 33s aGrape 5s infinite;
+  }
+}
+@keyframes aGrape {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  10% {
+    transform: rotateZ(0deg);
+  }
+}
+@media screen and (max-width: 900px) {
+  .grape {
+    padding-left: 150px;
+  }
+  .main {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
